@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="11dp"
+    android:layout_marginLeft="11dp"
+    android:layout_marginRight="11dp"
+    android:layout_marginBottom="11dp"
+    android:background="@drawable/draw"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:paddingRight="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/tvJuego"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juego botones"
+        android:layout_marginLeft="45dp"
+        android:layout_toRightOf="@id/tvHello"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/tvBuenaSuerte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buena suerte"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/tvNorma1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="En este juego hay que apretar los botones muy rápido"
+        android:layout_below="@+id/tvHello"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvNorma2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Antes de que se acabe el tiempo"
+        android:layout_below="@+id/tvNorma1"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvNorma3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="El mas rapido gana"
+        android:layout_below="@+id/tvNorma1"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEmpezarJugar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Jugar"
+        android:layout_below="@+id/tvNorma3"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn1"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:textSize="50px"
+        />
+
+    <TextView
+        android:id="@+id/tvTiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiempo restante: "
+        android:layout_below="@+id/btnEmpezarJugar"
+        android:layout_marginLeft="110dp"
+        android:textStyle="bold"
+        android:background="@color/orange"
+        />
+
+    <TextView
+        android:id="@+id/tvJugadasTotales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jugadas totales: "
+        android:layout_below="@+id/tvTiempo"
+        android:layout_marginLeft="110dp"
+        android:layout_marginBottom="15dp"
+        android:textStyle="bold"
+        android:background="@color/orange"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPuls01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puls01"
+        android:layout_below="@+id/tvJugadasTotales"
+        android:layout_marginTop="5dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPuls02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puls02"
+        android:layout_below="@+id/tvJugadasTotales"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="145dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPuls03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puls03"
+        android:layout_below="@+id/tvJugadasTotales"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPuls04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puls04"
+        android:layout_below="@+id/btnPuls01"
+        android:layout_marginTop="5dp"
+        />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPuls05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puls05"
+        android:layout_below="@+id/btnPuls01"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="145dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPuls06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puls06"
+        android:layout_below="@+id/btnPuls01"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPuls07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puls07"
+        android:layout_below="@+id/btnPuls04"
+        android:layout_marginTop="5dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPuls08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puls08"
+        android:layout_below="@+id/btnPuls04"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="145dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPuls09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puls09"
+        android:layout_below="@+id/btnPuls04"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPuls10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puls10"
+        android:layout_below="@+id/btnPuls07"
+        android:layout_marginTop="5dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPuls11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puls11"
+        android:layout_below="@+id/btnPuls07"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="145dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPuls12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puls12"
+        android:layout_below="@+id/btnPuls07"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_below="@+id/btnPuls10"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn1"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:textSize="50px"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etPlayerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce tu nombre "
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnReset"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@color/orange"
+        />
+
+    <TextView
+        android:id="@+id/tvBestPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Record de puntos \n Best: Desconocido"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/etPlayerName"
+        android:textStyle="bold"
+        android:background="@color/cyan"
+
+        />
+
+    <TextView
+        android:id="@+id/tvLastPlays"
+        android:layout_width="155dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Últimas jugadas: "
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_marginLeft="120dp"
+        android:layout_below="@+id/tvBestPlayer"
+        android:textStyle="bold"
+        android:background="@drawable/jugadas"
+        />
+
+</RelativeLayout>
